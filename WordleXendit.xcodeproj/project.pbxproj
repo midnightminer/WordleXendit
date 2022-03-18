@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF7788B427E2E4DC00538874 /* WordleXenditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7788B327E2E4DC00538874 /* WordleXenditApp.swift */; };
-		BF7788B627E2E4DC00538874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7788B527E2E4DC00538874 /* ContentView.swift */; };
 		BF7788B827E2E4E000538874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7788B727E2E4E000538874 /* Assets.xcassets */; };
 		BF7788BB27E2E4E000538874 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7788BA27E2E4E000538874 /* Preview Assets.xcassets */; };
 		BF7788BD27E2E4E000538874 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7788BC27E2E4E000538874 /* Persistence.swift */; };
@@ -16,6 +15,9 @@
 		BF7788CA27E2E4E000538874 /* WordleXenditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7788C927E2E4E000538874 /* WordleXenditTests.swift */; };
 		BF7788D427E2E4E000538874 /* WordleXenditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7788D327E2E4E000538874 /* WordleXenditUITests.swift */; };
 		BF7788D627E2E4E000538874 /* WordleXenditUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7788D527E2E4E000538874 /* WordleXenditUITestsLaunchTests.swift */; };
+		BFF633E927E404E9004AA634 /* WordleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF633E827E404E9004AA634 /* WordleViewModel.swift */; };
+		BFF633ED27E4072C004AA634 /* Wordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF633EC27E4072C004AA634 /* Wordle.swift */; };
+		BFF633F127E40BDC004AA634 /* WordleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF633F027E40BDC004AA634 /* WordleColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 /* Begin PBXFileReference section */
 		BF7788B027E2E4DC00538874 /* WordleXendit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleXendit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7788B327E2E4DC00538874 /* WordleXenditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleXenditApp.swift; sourceTree = "<group>"; };
-		BF7788B527E2E4DC00538874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF7788B727E2E4E000538874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF7788BA27E2E4E000538874 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF7788BC27E2E4E000538874 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		BF7788CF27E2E4E000538874 /* WordleXenditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordleXenditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7788D327E2E4E000538874 /* WordleXenditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleXenditUITests.swift; sourceTree = "<group>"; };
 		BF7788D527E2E4E000538874 /* WordleXenditUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleXenditUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFF633E827E404E9004AA634 /* WordleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleViewModel.swift; sourceTree = "<group>"; };
+		BFF633EC27E4072C004AA634 /* Wordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordle.swift; sourceTree = "<group>"; };
+		BFF633F027E40BDC004AA634 /* WordleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,13 @@
 			isa = PBXGroup;
 			children = (
 				BF7788B327E2E4DC00538874 /* WordleXenditApp.swift */,
-				BF7788B527E2E4DC00538874 /* ContentView.swift */,
 				BF7788B727E2E4E000538874 /* Assets.xcassets */,
 				BF7788BC27E2E4E000538874 /* Persistence.swift */,
 				BF7788BE27E2E4E000538874 /* WordleXendit.xcdatamodeld */,
 				BF7788B927E2E4E000538874 /* Preview Content */,
+				BFF633E827E404E9004AA634 /* WordleViewModel.swift */,
+				BFF633EC27E4072C004AA634 /* Wordle.swift */,
+				BFF633F027E40BDC004AA634 /* WordleColor.swift */,
 			);
 			path = WordleXendit;
 			sourceTree = "<group>";
@@ -263,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF633ED27E4072C004AA634 /* Wordle.swift in Sources */,
 				BF7788BD27E2E4E000538874 /* Persistence.swift in Sources */,
-				BF7788B627E2E4DC00538874 /* ContentView.swift in Sources */,
+				BFF633E927E404E9004AA634 /* WordleViewModel.swift in Sources */,
 				BF7788C027E2E4E000538874 /* WordleXendit.xcdatamodeld in Sources */,
+				BFF633F127E40BDC004AA634 /* WordleColor.swift in Sources */,
 				BF7788B427E2E4DC00538874 /* WordleXenditApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
