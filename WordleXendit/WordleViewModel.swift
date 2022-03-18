@@ -41,6 +41,21 @@ class WordleViewModel: ObservableObject {
         @Published var currentIndex = 0
         @Published var isSpaceFullInCurrentRow: Bool = false
     
+    func letterSelected(_ letter: String) {
+            
+            if self.isSpaceFullInCurrentRow == true {
+                return
+            }
+            
+            self.guessedWords[self.currentRow][self.currentIndex] = letter
+            
+            if self.currentIndex == 4 {
+                self.isSpaceFullInCurrentRow = true
+            }
+            else {
+                self.currentIndex += 1
+            }
+        }
         
         
 }
